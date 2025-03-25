@@ -11,11 +11,12 @@
     <!-- Header -->
     <header>
         <nav>
-            <div class="logo">Grandpa Steve's Garage</div>
+            <div class="logo">Granpa Steve's Garage</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -47,38 +48,47 @@
     <section id="projects" class="projects">
         <h2>My Projects</h2>
         <div class="project-gallery">
-            <!-- Dart Card first project-->
-            <div class="project-card">
+            <!-- Dart Card first project -->
+            <a href="dodge-coyote.html" class="project-card">
                 <img src="dodge-coyote-4.jpg" alt="Dodge Coyote">
                 <h3>Dodge Coyote</h3>
-                <p>1972 Dodge Coyote with a  383 Magnum engine. Originally a Dart Swinger.</p>
-                <a href="dodge-coyote.html" class="btn">View Project</a>
-            </div>
+                <p>1972 Dodge Coyote with a 383 Magnum engine. Originally a Dart Swinger.</p>
+            </a>
             <!-- Cutlass Card -->
-            <div class="project-card">
+            <a href="#" class="project-card">
                 <img src="442closeup.jpg" alt="Oldsmobile Cutlass">
                 <h3>Oldsmobile Cutlass Supreme</h3>
                 <p>1972 Oldsmobile Cutlass Supreme with original 455 CID V8 engine and turbo 400 transmission.</p>
-            </div>
+            </a>
             <!-- Firenza Card -->
-            <div class="project-card">
+            <a href="#" class="project-card">
                 <img src="firenza.jpg" alt="Oldsmobile Starfire Firenza">
                 <h3>Oldsmobile Starfire Firenza</h3>
                 <p>1979 Oldsmobile Starfire Firenza with a 305 CID, not modified, factory/stock specs.</p>
-            </div>
+            </a>
             <!-- Mustang Card -->
-            <div class="project-card">
+            <a href="#" class="project-card">
                 <img src="mustang.jpg" alt="Mustang Bullitt">
-                <h3>2008 Mustang Bullitt # 4244</h3>
+                <h3>2008 Mustang Bullitt #4244</h3>
                 <p>Dark Highland Green and 5 speed transmission.</p>
-            </div>
-            <!-- Add more project cards as needed -->
+            </a>
         </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; Cristo Creative Tech. All rights reserved.</p>
+        <p>© 2025 Granpa Steve's Garage. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

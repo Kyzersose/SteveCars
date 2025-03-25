@@ -174,11 +174,15 @@ nav {
 }
 
 .project-card {
+    display: block; /* Ensure the anchor behaves like a block element */
     background-color: #fff;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit text color from parent */
+    cursor: pointer; /* Show pointer cursor to indicate clickability */
 }
 
 .project-card:hover {
@@ -317,7 +321,6 @@ footer {
 /* Project Hero Section */
 .project-hero {
     height: 60vh;
-    background: url('dodge-coyote-1.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -350,6 +353,24 @@ footer {
 
 .project-hero p {
     font-size: 1.3rem;
+}
+
+/* Specific Hero Images for Each Project */
+.dodge-coyote-hero {
+    background: url('dodge-coyote-5.jpg') no-repeat center center/cover;
+}
+
+/* Placeholder for future project pages */
+.cutlass-hero {
+    background: url('442closeup.jpg') no-repeat center center/cover;
+}
+
+.firenza-hero {
+    background: url('firenza.jpg') no-repeat center center/cover;
+}
+
+.mustang-hero {
+    background: url('mustang.jpg') no-repeat center center/cover;
 }
 
 /* Project Details Section */
@@ -449,10 +470,4 @@ footer {
     .project-text {
         text-align: center;
     }
-}
-
-.project-card .btn {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
 }
