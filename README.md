@@ -2,7 +2,7 @@
 
 Welcome to **Granpa Steve's Garage**, a website showcasing my father in law's passion for classic car restorations! This project features detailed pages for his restoration projects with a responsive design, a lightbox gallery, and smooth animations.
 
-![Granpa Steve's Garage Screenshot](screenshot.png)
+![Granpa Steve's Garage Screenshot](screenshots/screenshot.png)
 
 ## 🚗 About the Project
 
