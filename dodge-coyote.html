@@ -49,13 +49,18 @@
     <section class="project-gallery">
         <h2>Gallery</h2>
         <div class="gallery-grid">
-            <img src="dodge-coyote-1.jpg" alt="Dodge Coyote with Wile E. Coyote">
-            <img src="dodge-coyote-2.jpg" alt="Dodge Coyote window sticker">
-            <img src="dodge-coyote-3.jpg" alt="Dodge Coyote engine">
-            <img src="dodge-coyote-4.jpg" alt="Dodge Coyote rear view">
-            <img src="dodge-coyote-5.jpg" alt="Dodge Coyote front view">
+            <img src="dodge-coyote-1.jpg" alt="Dodge Coyote with Wile E. Coyote" onclick="openLightbox(this.src)">
+            <img src="dodge-coyote-2.jpg" alt="Dodge Coyote window sticker" onclick="openLightbox(this.src)">
+            <img src="dodge-coyote-3.jpg" alt="Dodge Coyote engine" onclick="openLightbox(this.src)">
+            <img src="dodge-coyote-4.jpg" alt="Dodge Coyote rear view" onclick="openLightbox(this.src)">
+            <img src="dodge-coyote-5.jpg" alt="Dodge Coyote front view" onclick="openLightbox(this.src)">
         </div>
     </section>
+
+    <!-- Lightbox Container -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Expanded Image">
+    </div>
 
     <!-- Back to Projects Button -->
     <section class="back-to-projects">
