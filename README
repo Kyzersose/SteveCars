@@ -1,6 +1,0 @@
-This is a pet project for my father in law.
-Tools used:
-
-1. AWS S3 for static site hosting
-2. Cloudflare for DNS, caching, proxy
-3. Github for version control and Github action for S3 bucket sync deployments
