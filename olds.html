@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1979 Oldsmobile Starfire Firenza - Grandpa Steve's Garage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Grandpa Steve's Garage</div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>                
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="project-hero firenza-hero">
+        <div class="hero-content">
+            <h1>1979 Oldsmobile Starfire Firenza</h1>
+            <p>Easy fun car</p>
+        </div>
+    </section>
+
+    <!-- Project Details Section -->
+    <section class="project-details">
+        <h2>Project Overview</h2>
+        <div class="project-content">
+            <img src="img/olds-2.jpg" alt="1979 Oldsmobile Starfire Firenza">
+            <div class="project-text">
+                <p>"Placeholder"</p>
+                <p>- Grandpa Steve</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="project-gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="img/olds-1.jpg" alt="olds" onclick="openLightbox(this.src)">
+            <img src="img/olds-2.jpg" alt="olds" onclick="openLightbox(this.src)">
+            <img src="img/olds-3.jpg" alt="olds" onclick="openLightbox(this.src)">
+            <img src="img/olds-4.jpg" alt="olds" onclick="openLightbox(this.src)">
+        </div>
+    </section>
+
+    <!-- Lightbox Container -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Expanded Image">
+    </div>
+
+    <!-- Back to Projects Button -->
+    <section class="back-to-projects">
+        <a href="index.html#projects" class="btn">Back to Projects</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© Cristo Creative Tech. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

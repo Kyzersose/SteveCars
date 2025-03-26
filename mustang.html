@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2008 Mustang Bullitt - Grandpa Steve's Garage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Grandpa Steve's Garage</div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>                
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="project-hero mustang-hero">
+        <div class="hero-content">
+            <h1>2008 Mustang Bullitt</h1>
+            <p>The fastest and most fun car I've ever owned.</p>
+        </div>
+    </section>
+
+    <!-- Project Details Section -->
+    <section class="project-details">
+        <h2>Project Overview</h2>
+        <div class="project-content">
+            <img src="img/mustang-1.jpg" alt="Mustang Engine">
+            <div class="project-text">
+                <p>"2008 Mustang Bullitt # 4244. It's Dark Highland Green and 5 speed transmission. I was never a Ford person, but this is the fastest and most fun car I've ever owned, and it gets 28 MPG on the hiway with the A/C on.The only modification is a Rev-x high performance computer tune."</p>
+                <p>- Grandpa Steve</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="project-gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="img/mustang-1.jpg" alt="Cutlass Supreme rear window" onclick="openLightbox(this.src)">
+            <img src="img/mustang.jpg" alt="Cutlass Supreme driver side" onclick="openLightbox(this.src)">
+        </div>
+    </section>
+
+    <!-- Lightbox Container -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Expanded Image">
+    </div>
+
+    <!-- Back to Projects Button -->
+    <section class="back-to-projects">
+        <a href="index.html#projects" class="btn">Back to Projects</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© Cristo Creative Tech. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
