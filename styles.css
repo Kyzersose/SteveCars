@@ -71,7 +71,7 @@ nav {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: url('img/442closeup.jpg') no-repeat center center/cover;
+    background: url('img/442closeup.webp') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -357,20 +357,19 @@ footer {
 
 /* Specific Hero Images for Each Project */
 .dodge-coyote-hero {
-    background: url('img/dodge-coyote-5.jpg') no-repeat center center/cover;
+    background: url('img/dodge-coyote-5.webp') no-repeat center center/cover;
 }
 
-/* Placeholder for future project pages */
 .cutlass-hero {
-    background: url('img/442closeup.jpg') no-repeat center center/cover;
+    background: url('img/442closeup.webp') no-repeat center center/cover;
 }
 
 .firenza-hero {
-    background: url('img/firenza.jpg') no-repeat center center/cover;
+    background: url('img/firenza.webp') no-repeat center center/cover;
 }
 
 .mustang-hero {
-    background: url('img/mustang.jpg') no-repeat center center/cover;
+    background: url('img/mustang.webp') no-repeat center center/cover;
 }
 
 /* Project Details Section */
