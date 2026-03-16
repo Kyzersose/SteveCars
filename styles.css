@@ -319,6 +319,22 @@ footer {
     padding: 1rem 0;
 }
 
+.site-credit {
+    font-size: 0.9rem;
+    color: #8fa8c8;
+}
+
+.site-credit a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.site-credit a:hover {
+    color: #fff;
+}
+
 /* Animations */
 @keyframes slideIn {
     from {
