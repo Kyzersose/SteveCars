@@ -7,12 +7,15 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background: linear-gradient(160deg, #06101f 0%, #0d1e36 55%, #081424 100%);
+    background-attachment: fixed;
+    color: #c8d4e8;
+    min-height: 100vh;
 }
 
 /* Header */
 header {
-    background-color: #222;
+    background: linear-gradient(to right, #111 0%, #003087 100%);
     color: #fff;
     padding: 1rem 0;
     position: fixed;
@@ -126,13 +129,16 @@ nav {
 .about {
     padding: 5rem 2rem;
     text-align: center;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.03);
+    border-top: 1px solid rgba(0, 48, 135, 0.35);
+    border-bottom: 1px solid rgba(0, 48, 135, 0.35);
 }
 
 .about h2 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3rem;
     margin-bottom: 2rem;
+    color: #fff;
 }
 
 .about-content {
@@ -155,7 +161,7 @@ nav {
 /* Projects Section */
 .projects {
     padding: 5rem 2rem;
-    background-color: #f4f4f4;
+    background: rgba(0, 30, 80, 0.2);
     text-align: center;
 }
 
@@ -163,6 +169,7 @@ nav {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3rem;
     margin-bottom: 2rem;
+    color: #fff;
 }
 
 .project-gallery {
@@ -174,19 +181,23 @@ nav {
 }
 
 .project-card {
-    display: block; /* Ensure the anchor behaves like a block element */
-    background-color: #fff;
+    display: block;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    text-decoration: none; /* Remove underline from the link */
-    color: inherit; /* Inherit text color from parent */
-    cursor: pointer; /* Show pointer cursor to indicate clickability */
+    border: 1px solid rgba(0, 48, 135, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
+    border-color: rgba(77, 127, 212, 0.65);
+    box-shadow: 0 10px 35px rgba(0, 48, 135, 0.35);
 }
 
 .project-card img {
@@ -196,27 +207,59 @@ nav {
     border-radius: 10px;
 }
 
+/* Sold card */
+.project-card.sold {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card.sold img {
+    filter: grayscale(60%);
+}
+
+.project-card.sold::after {
+    content: 'SOLD';
+    position: absolute;
+    top: 22px;
+    right: -28px;
+    width: 110px;
+    background: #cc0000;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 4px 0;
+    transform: rotate(45deg);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
 .project-card h3 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.5rem;
     margin: 1rem 0;
+    color: #fff;
 }
 
 .project-card p {
     font-size: 1rem;
+    color: #8fa8c8;
 }
 
 /* Contact Section */
 .contact {
     padding: 5rem 2rem;
     text-align: center;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.03);
+    border-top: 1px solid rgba(0, 48, 135, 0.35);
+    border-bottom: 1px solid rgba(0, 48, 135, 0.35);
 }
 
 .contact h2 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3rem;
     margin-bottom: 2rem;
+    color: #fff;
 }
 
 #contact-form {
@@ -230,9 +273,23 @@ nav {
 #contact-form input,
 #contact-form textarea {
     padding: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 48, 135, 0.5);
     border-radius: 5px;
     font-size: 1rem;
+    background: rgba(255, 255, 255, 0.07);
+    color: #c8d4e8;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+    color: #5a7a9a;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: rgba(77, 127, 212, 0.8);
+    box-shadow: 0 0 0 3px rgba(0, 48, 135, 0.2);
 }
 
 #contact-form textarea {
@@ -256,7 +313,7 @@ nav {
 
 /* Footer */
 footer {
-    background-color: #222;
+    background: linear-gradient(to right, #111 0%, #003087 100%);
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -283,7 +340,7 @@ footer {
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #222;
+        background: linear-gradient(to right, #111 0%, #003087 100%);
         padding: 1rem 0;
     }
 
@@ -375,7 +432,9 @@ footer {
 /* Project Details Section */
 .project-details {
     padding: 5rem 2rem;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.03);
+    border-top: 1px solid rgba(0, 48, 135, 0.35);
+    border-bottom: 1px solid rgba(0, 48, 135, 0.35);
     text-align: center;
 }
 
@@ -383,6 +442,7 @@ footer {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3rem;
     margin-bottom: 2rem;
+    color: #fff;
 }
 
 .project-content {
@@ -405,12 +465,13 @@ footer {
 .project-text p {
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    color: #c8d4e8;
 }
 
 /* Project Gallery Section */
 .project-gallery {
     padding: 5rem 2rem;
-    background-color: #f4f4f4;
+    background: rgba(0, 30, 80, 0.2);
     text-align: center;
 }
 
@@ -418,6 +479,7 @@ footer {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3rem;
     margin-bottom: 2rem;
+    color: #fff;
 }
 
 .gallery-grid {
@@ -447,7 +509,7 @@ footer {
 .back-to-projects {
     padding: 2rem;
     text-align: center;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.03);
 }
 
 /* Responsive Design for Project Page */
