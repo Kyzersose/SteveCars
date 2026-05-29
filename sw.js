@@ -1,4 +1,4 @@
-const CACHE_NAME = 'steves-garage-v1';
+const CACHE_NAME = 'steves-garage-v2';
 
 const PRECACHE_ASSETS = [
   '/',
@@ -7,6 +7,10 @@ const PRECACHE_ASSETS = [
   '/script.js',
   '/manifest.json',
   '/favicon.png',
+  '/icons/icon-192.png',
+  '/icons/icon-512.png',
+  '/icons/icon-192-maskable.png',
+  '/icons/icon-512-maskable.png',
   '/dodge-coyote.html',
   '/cutlass.html',
   '/mustang.html',
